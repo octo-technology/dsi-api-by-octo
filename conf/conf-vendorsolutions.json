@@ -3,7 +3,7 @@
     "id": "3SCALE",
     "name": "3scale",
     "description-EN": "<a href=\"https://www.3scale.net/\" target=\"_blank\">3scale</a> is an hybrid platform created in 2007 that allow to manage APIs for internal or external users, to share, secure, control, and monetize APIs. The gateway is written in Lua and portals in Ruby. The solution was bought by Red Hat in 2016 and then open-sourced.",
-    "description-FR": "<a href=\"https://www.3scale.net/\" target=\"_blank\">3scale</a> est une plateforme hybride crée en 2007 qui permet de manager (partager, sécuriser, contrôler et monétiser) ses APIs pour des usages internes ou externes. La gateway est écrite en Lua et les portails en Ruby. La solution a été rachetée par Red Hat en 2016 et open-sourcée.",
+    "description-FR": "<a href=\"https://www.3scale.net/\" target=\"_blank\">3scale</a> est une plateforme hybride créée en 2007 qui permet de manager (partager, sécuriser, contrôler et monétiser) ses APIs pour des usages internes ou externes. La gateway est écrite en Lua et les portails en Ruby. La solution a été rachetée par Red Hat en 2016 et open-sourcée.",
     "website": "https://www.3scale.net/",
     "logo": "./conf/apim/3SCALE-logo.png",
     "pros-EN": [
@@ -32,7 +32,7 @@
       "No SOAP services publication features (which can be good as well to promote REST)"
     ],
     "cons-FR": [
-      "Complexité de la mise en œuvre de la sécurité (via LUA) qui nécessite des développeurs expérimentés (Lua, Nginx, <a href=\"https://tools.ietf.org/html/rfc6749\" target=\"_blank\">OAuth2</a>, Open ID Connect, etc.)",
+      "Complexité de mise en œuvre de la sécurité (via LUA) qui nécessite des développeurs expérimentés (Lua, Nginx, <a href=\"https://tools.ietf.org/html/rfc6749\" target=\"_blank\">OAuth2</a>, Open ID Connect, etc.)",
       "Très orientée déploiement hybride avec des portails en SaaS initialement (si un contexte on-premises est souhaité)",
       "Mais revirement on-premises de la stratégie depuis le rachat de Red Hat qui encourage à l'utilisation d'OpenShift et de Red Hat SSO (Keycloak)",
       "Pas de fonctionnalité de transcodage (ce qui peut être perçu comme un avantage) sauf si utilisé avec Red Hat FUSE (un « ESB light »  dont l'utilisation est encouragée par Red Hat)",
@@ -68,24 +68,24 @@
       "Monolithic architecture",
       "Global complexity regarding low-code policies configuration and programming that require trained Apigee developers and may raise maintainability issues (debugging, testing, etc)",
       "Not totaly a PAYG SaaS solution, ready to use on the shelf, which require to contact sales support to start",
-      "A gateway managing backend data & services access is a strategic asset. Implementing its \"front door\" to access backends with a solution that complete a vast ecosystem of a cloud leader may poses a risk of dependencies on other Google offerings and vendor lock-in"
+      "A gateway managing backend data & services access is a strategic asset. Implementing its \"front door\" to access backends with a solution that complete a vast ecosystem of a cloud leader may poses a risk of dependencies on other Google offerings and cloud lock-in"
     ],
     "cons-FR": [
       "Le coût de la licence élevé par rapport aux autres solutions",
       "Marketing de l'offre et produit très orienté ESB (construction des API en façade via des policies en point & click, plutôt que Management d’API) entainant un couplage fort entre la solution et les services backend cœurs, avec un risque de « vendor lock-in »",
-      "On finit par développer beaucoup de fonctionnalités dans le produit y compris la sécurisation <a href=\"https://tools.ietf.org/html/rfc6749\" target=\"_blank\">OAuth2</a>/<a href=\"https://openid.net/connect/\" target=\"_blank\">OIDC</a>. Pas de réele valeur apportée en comparaison de développements spécifiques qui peuvent ouvrir à des pratiques intéressantes comme TDD, TDR, CI/CD, etc.",
-      "Initialement, l'offre est orientée SaaS avec la possibilité d'un déploiement « on-premises ». Un mode mode hybride est proposé pour le moment en version Beta",
+      "On finit par développer beaucoup de fonctionnalités dans le produit y compris la sécurisation <a href=\"https://tools.ietf.org/html/rfc6749\" target=\"_blank\">OAuth2</a>/<a href=\"https://openid.net/connect/\" target=\"_blank\">OIDC</a>. Pas de réelle valeur apportée en comparaison de développements spécifiques qui peuvent ouvrir à des pratiques intéressantes comme TDD, TDR, CI/CD, etc.",
+      "Initialement, l'offre est orientée SaaS avec la possibilité d'un déploiement « on-premises ». Un mode hybride est proposé pour le moment en version Beta",
       "Architecture assez monolithique",
       "Complexité induite par le développement et paramétrage low-code des « policies » dans le produit, qui nécéssitent des dévelopeurs formés à la solution Apigee et peut conduire à des problèmes de maintenabilité (test, débogage, etc.)",
       "Pas totalement une véritable solution SaaS et PAYG sur étagère, qui nécessite de contacter le service commercial pour démarrer",
-      "Une gateway gérant l'accès aux données & services des backend est un asset stratégique. Implémenter sa « porte d'entrée » pour accéder  a ses backends avec une solution qui complète le vaste éccosystème d'un des leaders du cloud peut entraîner un risque de dépendance  à l'offre Google et de « vendor lock-in »"
+      "Une gateway gérant l'accès aux données & services des backend est un asset stratégique. Implémenter sa « porte d'entrée » pour accéder à ses backends avec une solution qui complète le vaste écosystème d'un des leaders du cloud peut entraîner un risque de dépendance  à l'offre Google et de « cloud lock-in »"
     ]
   },
   {
     "id": "AWS",
     "name": "Amazon API Gateway",
     "description-EN": "<a href=\"https://aws.amazon.com/what-is-aws/\" target=\"_blank\">Amazon Web Services (AWS)</a> offers a cloud-only solution <a href=\"https://aws.amazon.com/api-gateway/\" target=\"_blank\">Amazon API Gateway</a> that allow developers to create, publish, secure, limit access and monitor APIs at any scale. The Gateway act as the \"front door\" for applications to access backends data and services (containerized serverless workloads and web applications). Amazon API Gateway is a PAYG (Pay As You Go) solution which complete a vast ecosystem of a cloud leader.",
-    "description-FR": "<a href=\"https://aws.amazon.com/fr/what-is-aws/\" target=\"_blank\">Amazon Web Services (AWS)</a> offre une solution « cloud-only » <a href=\"https://aws.amazon.com/fr/api-gateway/\" target=\"_blank\">Amazon API Gateway</a> qui aide les développers à créer, publier, sécuriser, limiter l'accès et monitorer des APIs à n'importe quelle échelle. La Gateway sert de « porte d'entrée » pour que les applications puissent accéder aux données et services des backends (charges de travail serverless conteneurisées et applications web). Amazon API Gateway est une solution « PAYG » (Pay As You Go) qui complete le vaste éccosystème d'un des leaders du cloud.",
+    "description-FR": "<a href=\"https://aws.amazon.com/fr/what-is-aws/\" target=\"_blank\">Amazon Web Services (AWS)</a> offre une solution « cloud-only » <a href=\"https://aws.amazon.com/fr/api-gateway/\" target=\"_blank\">Amazon API Gateway</a> qui aide les développers à créer, publier, sécuriser, limiter l'accès et monitorer des APIs à n'importe quelle échelle. La Gateway sert de « porte d'entrée » pour que les applications puissent accéder aux données et services des backends (charges de travail serverless conteneurisées et applications web). Amazon API Gateway est une solution « PAYG » (Pay As You Go) qui complète le vaste écosystème d'un des leaders du cloud.",
     "website": "href=\"https://aws.amazon.com/api-gateway/",
     "logo": "./conf/apim/aws-logo.png",
     "pros-EN": [
@@ -98,28 +98,28 @@
       "An <a href=\"https://github.com/awslabs/aws-api-gateway-developer-portal\" target=\"_blank\">open source developer portal</a> written in <a href=\"https://fr.reactjs.org/\">React</a>"
     ],
     "pros-FR": [
-      "Parfaitement intégré au vaste éccosystème de services managés d'un des leaders du cloud",
+      "Parfaitement intégrée au vaste écosystème de services managés d'un des leaders du cloud",
       "Fait sens dans une stratégie de fort engagement sur le cloud AWS",
       "L’aura/le support d'Amazon autour du produit",
       "Solution « developer/ OPS friendly » ",
-      "Une véritable solution SaaS et PAYG, sur étagère qui ne nécessite pas de contacter le service commercial pour démarrer",
-      "Pas une solution orientée ESB qui repose sur des fonctionalité de transcodage (des services SOAP existants vers REST) mais se focalise sur le management d'APIs, ce qui limite le couplage entre la solution et les services backend cœurs",
+      "Une véritable solution SaaS et PAYG sur étagère qui ne nécessite pas de contacter le service commercial pour démarrer",
+      "Ce n'est pas une solution orientée ESB qui repose sur des fonctionalités de transcodage (des services SOAP existant vers REST) mais se focalise sur le management d'APIs, ce qui limite le couplage entre la solution et les services backend cœurs",
       "Un <a href=\"https://github.com/awslabs/aws-api-gateway-developer-portal\" target=\"_blank\">portail développeur open source </a> écrit en <a href=\"https://fr.reactjs.org/\">React</a>"
     ],
     "cons-EN": [
       "The solution find its origins in service management with a large infrastructure footprint which handle the \"South\" parts of API management (covered by other solution as <a href=\"https://blog.octo.com/octo-vision-on-service-mesh-the-challenges/\" target=\"_blank\">Service mesh</a>) . Especially, Amazon API Gateway offers only a small subset of the API management functionality provided by other pure player & pure player solutions regarding \"North\" parts of API management (billing, a developer portal managing enrolment, allowing to secure API calls with <a href=\"https://openid.net/connect/\" target=\"_blank\">OIDC</a>, etc.) ",
-      "A gateway managing backend data & services access is a strategic asset. Implementing its \"front door\" to access backends with a solution that complete a vast ecosystem of a cloud leader may poses a risk of dependencies on other AWS offerings and vendor lock-in"
+      "A gateway managing backend data & services access is a strategic asset. Implementing its \"front door\" to access backends with a solution that complete a vast ecosystem of a cloud leader may poses a risk of dependencies on other AWS offerings and cloud lock-in"
     ],
     "cons-FR": [
-      "Le produit tire ses origines du management de services avec une forte empreinte infrastructure qui traite les problématiques « Sud » du management d'APIs (que l'on retrouve sur d'autres types de produits comme les <a href=\"https://blog.octo.com/octo-vision-on-service-mesh-the-challenges/\" target=\"_blank\">Service mesh</a>) . En particulier, Amazon API Gateway ne propose pas toutes le fonctionnalités offertes par d'autres solutions « pure player » plus matures sur les aspects « Nord » du management d'APIs (monétisation, portail dévelopeur gérant l'enrôlement et permétant la sécurisation <a href=\"https://openid.net/connect/\" target=\"_blank\">OIDC</a> des appels APIs, etc.) ",
-      "Une gateway gérant l'accès aux données & services des backend est un asset stratégique. Implémenter sa « porte d'entrée » pour accéder  a ses backends avec une solution qui complète le vaste éccosystème d'un des leaders du cloud peut entraîner un risque de dépendance  à l'offre AWS et de « vendor lock-in »"
+      "Le produit tire ses origines du management de services avec une forte empreinte infrastructure qui traite les problématiques « Sud » du management d'APIs (que l'on retrouve sur d'autres types de produits comme les <a href=\"https://blog.octo.com/octo-vision-on-service-mesh-the-challenges/\" target=\"_blank\">Service mesh</a>) . En particulier, Amazon API Gateway ne propose pas toutes le fonctionnalités offertes par d'autres solutions « pure player » plus matures sur les aspects « Nord » du management d'APIs (monétisation, portail dévelopeur gérant l'enrôlement et permettant la sécurisation <a href=\"https://openid.net/connect/\" target=\"_blank\">OIDC</a> des appels APIs, etc.) ",
+      "Une gateway gérant l'accès aux données & services des backend est un asset stratégique. Implémenter sa « porte d'entrée » pour accéder  à ses backends avec une solution qui complète le vaste écosystème d'un des leaders du cloud peut entraîner un risque de dépendance  à l'offre AWS et de « cloud lock-in »"
     ]
   },
   {
     "id": "AXWAY",
     "name": "Axway",
     "description-EN": "<a href=\"https://www.axway.com/en/products/api-management\" target\"_blank\">AMPLIFY API Management</a> is a french product owned by Sopra-Steria. At first, it was an ESB (strong B2B integration expertise). It evolved into an API Management solution when Sopra-Steria acquired Vordel in 2011",
-    "description-FR": "La solution <a href=\"https://www.axway.com/en/products/api-management\" target\"_blank\">AMPLIFY API Management</a> d'AXWAY est un produit Français détenu par Sopra-Steria. Initialement, c'était un ESB (forte expertise d'integration B2B) qui après l'acquisition de la solution d'API Management Vordel en 2011, a évolué vers une solution d'API Management intégrale.",
+    "description-FR": "La solution <a href=\"https://www.axway.com/en/products/api-management\" target\"_blank\">AMPLIFY API Management</a> d'AXWAY est un produit français détenu par Sopra-Steria. Initialement, c'était un ESB (forte expertise d'integration B2B) qui après l'acquisition de la solution d'API Management Vordel en 2011, a évolué vers une solution d'API Management intégrale.",
     "website": "axway.com",
     "logo": "./conf/apim/axway-logo.png",
     "pros-EN": [
@@ -155,7 +155,7 @@
     "id": "BROADCOM",
     "name": "Broadcom",
     "description-EN": "The API Management solution is one a many solutions sold by Broadcom since the acquisition of CA Technologies in 2018. The solution proposes three software blocks : Layer7 API Gateway, Layer7 API Developer Portal, Layer7 Live API Creator. gateway. It offers cloud-only deployment, fully on-premises deployment and hybrid deployment.",
-    "description-FR": "La solution d'API Management fait partie d'une suite de produits proposés par Broadcom aprèsà son acquisition de CA Technologies en 2018. La solution repose sur trois briques: Layer7 API Gateway, Layer7 API Developer Portal, Layer7 Live API Creator. Elle propose des modes de déploiement cloud SaaS, on-premises et hybride.",
+    "description-FR": "La solution d'API Management fait partie d'une suite de produits proposés par Broadcom après son acquisition de CA Technologies en 2018. La solution repose sur trois briques: Layer7 API Gateway, Layer7 API Developer Portal, Layer7 Live API Creator. Elle propose des modes de déploiement cloud SaaS, on-premises et hybride.",
     "website": "https://www.broadcom.com/info/api-management",
     "logo": "./conf/apim/broadcom-logo.png",
     "pros-EN": [
@@ -164,7 +164,7 @@
       "Product usable by non-developers (low-code point & click approche)"
     ],
     "pros-FR": [
-      "Maturité constatée : beaucoup déployé dans des contextes d'integration B2B puis SOA",
+      "Maturité constatée : beaucoup déployée dans des contextes d'integration B2B puis SOA",
       "Fonctionnalités ESB de transcodage éprouvées via Layer7 Live API Creator (IDE graphique permettant de paramétrer et développer, avec une approche low-code, des policies de transcodage par exemple SOAP to REST, de sécurisation ou de rate limiting, etc.)",
       "Produit accessible à des non-développeurs (approche low-code point & click)"
     ],
@@ -226,13 +226,13 @@
     ],
     "pros-FR": [
       "Le support worldwide IBM",
-      "Produit accessible à des non-développeurs : approche low-code point & click, possibilité de générer des APIs à partir de modélisations graphiques, etc. maisé galement à des développeurs car basé sur des solutions open-sources : <a href=\"https://loopback.io/\" target=\"_blank\">Loopback</a>, <a href=\"https://github.com/strongloop\" target=\"_blank\">Strongloop</a> et <a href=\"https://www.drupal.org/\" target=\"_blank\">Drupal</a>",
+      "Produit accessible à des non-développeurs : approche low-code point & click, possibilité de générer des APIs à partir de modélisations graphiques, etc. mais également à des développeurs car basé sur des solutions open-source : <a href=\"https://loopback.io/\" target=\"_blank\">Loopback</a>, <a href=\"https://github.com/strongloop\" target=\"_blank\">Strongloop</a> et <a href=\"https://www.drupal.org/\" target=\"_blank\">Drupal</a>",
       "Intégration facilitée lorsqu'on travaille déjà avec des produits IBM : il est par exemple possible de gérer des APIs REST générées à partir d'applications mainframe écrites en COBOL. Bonne intégration avec DataPower et IBM Cloud (Bluemix)",
       "Portail développeur agréable et personnalisable via des thèmes"
     ],
     "cons-EN": [
       "Time to market to deploy the solution can be slow besause the product is often deployed in its on-premises version. But API Management solution are based on complex architectures (DataPower) and is tightly coupled with IS",
-      "A gateway managing backend data & services access is a strategic asset. Implementing its \"front door\" to access backends with a solution that complete a vast ecosystem of a cloud leader may poses a risk of dependencies on other IBM offerings and vendor lock-in",
+      "A gateway managing backend data & services access is a strategic asset. Implementing its \"front door\" to access backends with a solution that complete a vast ecosystem of a cloud leader may poses a risk of dependencies on other IBM offerings and cloud lock-in",
       "Licence cost",
       "It is impossible to do without IBM support in case of incidents, mostly with DataPower gateway implementation",
       "Few references in production (mostly based on the french market)",
@@ -241,7 +241,7 @@
     ],
     "cons-FR": [
       "Le time to market de la mise en œuvre est parfois lent car la solution est souvent déployée en version on-premises. Les solutions d'API Management sous-tendent des architectures globalement complexes (DataPower) et sont très couplées au SI",
-      "Une gateway gérant l'accès aux données & services des backend est un asset stratégique. Implémenter sa « porte d'entrée » pour accéder  a ses backends avec une solution qui complète le vaste éccosystème d'un des leaders du cloud peut entraîner un risque de dépendance à l'offre IBM et de « vendor lock-in »",
+      "Une gateway gérant l'accès aux données & services des backend est un asset stratégique. Implémenter sa « porte d'entrée » pour accéder  à ses backends avec une solution qui complète le vaste écosystème d'un des leaders du cloud peut entraîner un risque de dépendance à l'offre IBM et de « cloud lock-in »",
       "Coût de la licence",
       "Impossible de se passer du support IBM en cas d'incidents notamment sur l'implementation basée sur DataPower",
       "Faible présence en France et peu de références d’API en production",
@@ -267,7 +267,7 @@
     ],
     "pros-FR": [
       "Solution basée sur une API (API first) bien designée et bien documentée",
-      "Haute personnalisation possible via une mécanisme de plugin. Kong Hub permet d'accéder à des plugins gratuits ou payants qui permettent d'implémenter certaines fonctionnalités (comme API_KEY et Bearer token)",
+      "Haute personnalisation possible via un mécanisme de plugin. Kong Hub permet d'accéder à des plugins gratuits ou payants qui permettent d'implémenter certaines fonctionnalités (comme API_KEY et Bearer token)",
       "La gateway est <a href=\"https://github.com/Kong/kong\" target=\"_blank\">open source</a> et largement déployée",
       "Architecture et performances de la gateway",
       "Couplage avec Auth0 simple via le plugin JWT",
@@ -311,20 +311,20 @@
       "Stratégie full SaaS pertinente",
       "Bonne intégration dans un écosystème Microsoft AZURE",
       "Bundle de APIphany, pure player de l'API Management (il ne s'agit pas d'un ESB historique)",
-      "Une véritable solution SaaS et PAYG, sur étagère qui ne nécessite pas de contacter le service commercial pour démarrer",
+      "Une véritable solution SaaS et PAYG sur étagère qui ne nécessite pas de contacter le service commercial pour démarrer",
       "Le portail développeur est <a href=\"https://github.com/Azure/api-management-developer-portal\" target=\"_blank\">open source</a>",
       "Coût de licences évolutif",
       "Produit accessible à des non-développeurs : approche low-code point & click"
     ],
     "cons-EN": [
-      "A gateway managing backend data & services access is a strategic asset. Implementing its \"front door\" to access backends with a solution that complete a vast ecosystem of a cloud leader may poses a risk of dependencies on other Microsoft offerings and vendor lock-in",
+      "A gateway managing backend data & services access is a strategic asset. Implementing its \"front door\" to access backends with a solution that complete a vast ecosystem of a cloud leader may poses a risk of dependencies on other Microsoft offerings and cloud lock-in",
       "Few references in the french market",
       "Limited developer portal customization features",
       "Limited documentation on security and strong coupling with AZURE security solutions",
       "Hybrid and on-premises mode are not available (work is in progress)"
     ],
     "cons-FR": [
-      "Une gateway gérant l'accès aux données & services des backend est un asset stratégique. Implémenter sa « porte d'entrée » pour accéder  a ses backends avec une solution qui complète le vaste éccosystème d'un des leaders du cloud peut entraîner un risque de dépendance à l'offre Microsoft et de « vendor lock-in »",
+      "Une gateway gérant l'accès aux données & services des backend est un asset stratégique. Implémenter sa « porte d'entrée » pour accéder  à ses backends avec une solution qui complète le vaste écosystème d'un des leaders du cloud peut entraîner un risque de dépendance à l'offre Microsoft et de « cloud lock-in »",
       "Rarement déployée en France",
       "Personnalisation du portail développeur encore assez limité",
       "Très peu de documentation sur la sécurisation et couplage fort avec les solutions de sécurisation Azure",
@@ -334,8 +334,8 @@
   {
     "id": "MULESOFT",
     "name": "Mulesoft",
-    "description-EN": "MuleSoft, Inc. is a software company headquartered in San Francisco, that provides integration software for connecting applications, data and devices. Started in 2006, the company originally provided a lightweight enterprise service bus and later expanded to provide an integration platform as a service (iPaaS), with API capabilities: a design center to design and build APIs, a management center to analyze, manage, and monitor APIs, a runtime engine for connecting enterprise applications on-premises and to the cloud to eliminate the need for custom point-to-point integration code. In May 2018, Salesforce completed acquisition of MuleSoft.",
-    "description-FR": "MuleSoft, Inc. est une société basée à San Francisco, qui fournit une solution d'intégration pour connecter les applications, les données et les terminaux. En 2006, Mulesoft fournie un ESB light puis une plateforme d'intégration \"as a service\" (iPaaS), avec des fonctionnalités de gestion d'APIs : un centre de design pour designer et construire des APIs, un centre de management pour analyser, manager, et monitorer les APIs, un moteur de runtime pour connecter les applications enterprise on-premises ou cloud afin d'éliminer les besoins d'intégration spécifiques point-à-point. En Mai 2018, Mulesoft est acquise par Salesforce.",
+    "description-EN": "MuleSoft, Inc. is a software company headquartered in San Francisco, that provides integration software for connecting applications, data and devices. Started in 2006, the company originally provided a lightweight enterprise service bus and later expanded to provide an integration platform as a service (iPaaS), with API capabilities: a design center to design and build APIs, a management center to analyze, manage, and monitor APIs, a runtime engine for connecting enterprise applications on-premises and to the cloud to eliminate the need for custom point-to-point integration code. In may 2018, Salesforce completed acquisition of MuleSoft.",
+    "description-FR": "MuleSoft, Inc. est une société basée à San Francisco, qui fournit une solution d'intégration pour connecter les applications, les données et les terminaux. En 2006, Mulesoft fournie un ESB light puis une plateforme d'intégration \"as a service\" (iPaaS), avec des fonctionnalités de gestion d'APIs : un centre de design pour designer et construire des APIs, un centre de management pour analyser, manager, et monitorer les APIs, un moteur de runtime pour connecter les applications enterprise on-premises ou cloud afin d'éliminer les besoins d'intégration spécifiques point-à-point. En mai 2018, Mulesoft est acquise par Salesforce.",
     "website": "https://www.mulesoft.com/",
     "logo": "./conf/apim/mulesoft-logo.png",
     "pros-EN": [
@@ -405,7 +405,7 @@
     "id": "TIBCO",
     "name": "TIBCO Cloud™ Mashery® API Management",
     "description-EN": "TIBCO Software Inc. is an American company that provides integration, analytics and event-processing software for companies. Software is a middleware, ESB which focuses on real-time communication for B2B, B2C data transfers. On August 2015, TIBCO acquired Mashery, an API Management solution from Intel.",
-    "description-FR": "TIBCO Software Inc. est une entreprise américaine qui fournit une plateforme d'integration, d'analytics et de gestions d'évenements pour les entreprises. Il s'agit d'un middleware ESB qui permet la communication temps réel en contexte B2B, B2C. En Août 2015, TIBCO a racheté la solution d'API Management Mashery a Intel.",
+    "description-FR": "TIBCO Software Inc. est une entreprise américaine qui fournit une plateforme d'integration, d'analytics et de gestion d'évenements pour les entreprises. Il s'agit d'un middleware ESB qui permet la communication temps réel en contexte B2B, B2C. En août 2015, TIBCO a racheté la solution d'API Management Mashery à Intel.",
     "website": "https://www.tibco.com/products/api-management",
     "logo": "./conf/apim/tibco-logo.png",
     "pros-EN": [
@@ -437,7 +437,7 @@
     "id": "TYK",
     "name": "Tyk",
     "description-EN": "Tyk is an open source API Gateway developed in 2014 in London, which offers an API Management Platform with an API Gateway, API Analytics, Developer Portal and API Management Dashboard.",
-    "description-FR": "Tyk est une plateforme d'API Management développée initialement à Londres en 2014, qui offre une gateway <a href=\"https://github.com/TykTechnologies/tyk\" target=\"_blank\">open source</a> écrite en Go, un portail développeur et un tableau de bord sur les API avec des fonctionnalités d'analytiques.",
+    "description-FR": "Tyk est une plateforme d'API Management développée initialement à Londres en 2014, qui offre une gateway <a href=\"https://github.com/TykTechnologies/tyk\" target=\"_blank\">open source</a> écrite en Go, un portail développeur et un tableau de bord sur les API avec des fonctionnalités d'analytics.",
     "website": "tyk.com",
     "logo": "./conf/apim/tyk-logo.png",
     "pros-EN": [
@@ -468,7 +468,7 @@
       "Fonctionnalités manquantes et BUG pour le mode Hybride. Par exemple, la gateway Saas reste active",
       "Sécurisation API basique : Le flow client credentials <a href=\"https://tools.ietf.org/html/rfc6749\" target=\"_blank\">OAuth2</a> utilise des tokens opaques et ne gère pas les scopes. Pas d'implémentation <a href=\"https://openid.net/connect/\" target=\"_blank\">OIDC</a> (obligation d'utiliser une solution tierce)",
       "Plugins JS laborieux à mettre en place",
-      "La documentation souffre de cohérence globale et de mises à jours (il arrive de devoir lire le code GO pour comprendre certains mécanismes)",
+      "La documentation manque de cohérence globale et de mises à jour (il arrive de devoir lire le code GO pour comprendre certains mécanismes)",
       "Compétence du support N3 (faible compréhension des problématiques de sécurisation <a href=\"https://openid.net/connect/\" target=\"_blank\">OIDC</a>/<a href=\"https://tools.ietf.org/html/rfc6749\" target=\"_blank\">OAuth2</a>, de performance, de déploiement, etc.)",
       "L'API est d'une qualité perfectible au regard des standards REST (identifiants de ressources non homogènes, etc.)"
     ]
@@ -501,7 +501,7 @@
     "cons-FR": [
       "Documentation complexe (plus de 1600 pages...)",
       "Retours d’expérience mitigés : solution complexe à mettre en oeuvre, comportements contre-intuitifs, personnalisation compliquée à mettre en oeuvre, nombreuses limitations...",
-      "Faible communauté d'entraide sur internet lorsque l'on rencontre des problèmes sur des sujet avancés : problématiques de sécurisation d'API <a href=\"https://openid.net/connect/\" target=\"_blank\">OIDC</a>, <a href=\"https://tools.ietf.org/html/rfc6749\" target=\"_blank\">OAuth2</a>",
+      "Faible communauté d'entraide sur internet lorsqu'on rencontre des problèmes sur des sujet avancés : problématiques de sécurisation d'API <a href=\"https://openid.net/connect/\" target=\"_blank\">OIDC</a>, <a href=\"https://tools.ietf.org/html/rfc6749\" target=\"_blank\">OAuth2</a>",
       "Forte emprunte ESB-light (brique de transcodage)", 
       "WSO2 éditant une suite de logiciels qui s'intègrent les uns aux autres (analytics, ESB, authentification...), il y a un risque de vendor lock-in", 
       "Le coût des licences on-premises : la facturation se fait à l'instance et grimpe donc très rapidement"

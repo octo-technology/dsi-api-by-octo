@@ -83,6 +83,8 @@ $(document).ready(function() {
         },
         _backHistoryHook: function() {
             var back = this.history.shift();
+            console.log("back:");
+            console.log(back);
             if(back[0]=='NAVINTRO') {
                 this.displayIntro();
             } else if(back[0]=='NAVQUIZZ') {
@@ -205,8 +207,14 @@ $(document).ready(function() {
                 var fail = self.conf.quizz.quizz[id].fail;
                 if(fail) {
                     self.displayFail(fail);
+                    $(".return-button").click(function() {
+                        self._backHistoryHook();
+                    });
                 } else {
                     self.displayQuizzSolutions(apims);
+                    $(".return-button").click(function() {
+                        self._backHistoryHook();
+                    });
                 }
             } else {
                 $("#form-" + id).show();
@@ -439,6 +447,7 @@ $(document).ready(function() {
             htmlfail += '</div>';
 
             htmlfail += '</div>';
+            htmlfail += '<a class="return-button" href="#"><span class="icon icon-shape-chevron"></span> ' + this._getCMSValue('home', 'section-quizz-return-button') + '</a>';
             $("form").hide();
             $("#section-quizz").html(htmlfail);
         },
@@ -459,6 +468,7 @@ $(document).ready(function() {
                 }
             }
             htmlapims += '</div>';
+            htmlapims += '<a class="return-button" href="#"><span class="icon icon-shape-chevron"></span> ' + this._getCMSValue('home', 'section-quizz-return-button') + '</a>';
             $("form").hide();
             $("#home-bg").css('background-image', 'url(' + self._getCMSValue('section-quizz', 'background-image') + ')');
             $("#section-quizz").html(htmlapims);

@@ -96,8 +96,8 @@
       ]
     },
     "ID32": {
-      "question-EN": "Do I have a strong partnership with a vendor on my Information System which I'm satisfied with?",
-      "question-FR": "Ai-je un partenariat fort avec un éditeur au sein de mon système d'information, dont je suis satisfait ?",
+      "question-EN": "Do I have a strong partnership with a CLOUD vendor on my Information System which I'm satisfied with?",
+      "question-FR": "Ai-je un partenariat fort avec un éditeur CLOUD au sein de mon système d'information, dont je suis satisfait ?",
       "answers": [
         {
           "answer-EN": "Yes",
