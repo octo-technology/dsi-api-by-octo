@@ -333,7 +333,7 @@
   },
   {
     "id": "MULESOFT",
-    "name": "Mulsoft",
+    "name": "Mulesoft",
     "description-EN": "MuleSoft, Inc. is a software company headquartered in San Francisco, that provides integration software for connecting applications, data and devices. Started in 2006, the company originally provided a lightweight enterprise service bus and later expanded to provide an integration platform as a service (iPaaS), with API capabilities: a design center to design and build APIs, a management center to analyze, manage, and monitor APIs, a runtime engine for connecting enterprise applications on-premises and to the cloud to eliminate the need for custom point-to-point integration code. In May 2018, Salesforce completed acquisition of MuleSoft.",
     "description-FR": "MuleSoft, Inc. est une société basée à San Francisco, qui fournit une solution d'intégration pour connecter les applications, les données et les terminaux. En 2006, Mulesoft fournie un ESB light puis une plateforme d'intégration \"as a service\" (iPaaS), avec des fonctionnalités de gestion d'APIs : un centre de design pour designer et construire des APIs, un centre de management pour analyser, manager, et monitorer les APIs, un moteur de runtime pour connecter les applications enterprise on-premises ou cloud afin d'éliminer les besoins d'intégration spécifiques point-à-point. En Mai 2018, Mulesoft est acquise par Salesforce.",
     "website": "https://www.mulesoft.com/",
@@ -360,7 +360,7 @@
       "Not totaly a PAYG SaaS solution, ready to use on the shelf, which require to contact sales support"
     ],
     "cons-FR": [
-      "Complexité induite par le développement et paramétrage low-code des « policies » dans le produit, qui nécéssitent des dévelopeurs formés à la solution Mulsoft et peut conduire à des problèmes de maintenabilité (test, débogage, etc.). La brochure mentionne <blockquote>\"Design and build APIs and integrations at lightning speed\"</blockquote> Ce n'est hélas pas aussi simple.",
+      "Complexité induite par le développement et paramétrage low-code des « policies » dans le produit, qui nécéssitent des dévelopeurs formés à la solution Mulesoft et peut conduire à des problèmes de maintenabilité (test, débogage, etc.). La brochure mentionne <blockquote>\"Design and build APIs and integrations at lightning speed\"</blockquote> Ce n'est hélas pas aussi simple.",
       "Impossible de se passer de l'éditeur en cas d'incidents ou de besoins d'évolutions",
       "Complexité et non-flexibilité d’une solution packagée, liée à son historique ESB",
       "Mindset ESB, intégration avec des fonctionnalités de management d'APIs",
