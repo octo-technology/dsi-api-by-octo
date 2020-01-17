@@ -39,7 +39,7 @@ $(document).ready(function() {
         _paralaxHook: function() {
             var baseHeight = 0;
             var decalage = $(window).scrollTop() / 3 - baseHeight;
-            $('#home-bg').css('background-position-y', decalage + 'px');
+            $('#home-bg-container div').css('background-position-y', decalage + 'px');
         },
         _resizeVideoContainerHook: function() {
             $('header').fadeIn();
@@ -162,7 +162,7 @@ $(document).ready(function() {
             this._setCMSValue('.button-quizz a', 'home', 'header-menu-quizz');
             this._setCMSValue('.button-solutions a', 'home', 'header-menu-solutions');
             this._setCMSValue('.button-publications a', 'home', 'header-menu-publications');
-            this._setCMSValue('.button-contact a', 'home', 'header-menu-download');
+            this._setCMSValue('.button-download a', 'home', 'header-menu-download');
 
             this._setCMSValue('#button-legal a', 'home', 'footer-button-legal');
             this._setCMSValue('#button-press a', 'home', 'footer-button-press');
@@ -190,6 +190,9 @@ $(document).ready(function() {
             } else {
                 $("#home-bg").css('background-image', 'url(' + this._getCMSValue('home', 'background-image') + ')');
             }
+            $("#home-bg").removeClass("transparent");
+            $("#home-bg-open").addClass("transparent");
+            $("#home-bg-solutions").addClass("transparent");
             $("#section-intro").fadeIn();
         },
         displayQuizz: function(id, value) {
@@ -243,6 +246,9 @@ $(document).ready(function() {
                 } else {
                     $("#home-bg").css('background-image', 'url(' + self._getCMSValue('home', 'background-image') + ')');
                 }
+                $("#home-bg").removeClass("transparent");
+                $("#home-bg-open").addClass("transparent");
+                $("#home-bg-solutions").addClass("transparent");
                 $("#section-quizz").fadeIn();
             }
         },
@@ -257,6 +263,7 @@ $(document).ready(function() {
                 e.preventDefault();
                 self.currentNav = 'NAVQUIZZ';
                 self.hasToDisplayQuizz = false;
+                window.location.hash = '';
                 app._reDisplay();
                 $(".button-solutions").removeClass("active");
                 $(".button-quizz").removeClass("active");
@@ -266,6 +273,7 @@ $(document).ready(function() {
             $(".button-quizz").click(function(e) {
                 e.preventDefault();
                 self.history.unshift(['NAVINTRO']);
+                window.location.hash = 'display=NAVQUIZZ'+self.lang;
                 app.displayQuizz();
                 $(".button-solutions").removeClass("active");
                 $(".button-quizz").addClass("active");
@@ -274,6 +282,7 @@ $(document).ready(function() {
 
             $(".button-solutions").click(function(e) {
                 e.preventDefault();
+                window.location.hash = 'display=NAVBENCHMARK'+self.lang;
                 app.displayAllSolutions();
                 $(".button-quizz").removeClass("active");
                 $(".button-solutions").addClass("active");
@@ -286,6 +295,7 @@ $(document).ready(function() {
             $(".button-lang-fr").click(function(e) {
                 e.preventDefault();
                 self.lang = "FR";
+                window.location.hash = 'display='+self.currentNav+'FR';
                 self._reDisplay();
                 $(".button-lang-en").removeClass("active");
                 $(".button-lang-fr").addClass("active");
@@ -294,6 +304,7 @@ $(document).ready(function() {
             $(".button-lang-en").click(function(e) {
                 e.preventDefault();
                 self.lang = "EN";
+                window.location.hash = 'display='+self.currentNav+'EN';
                 self._reDisplay();
                 $(".button-lang-fr").removeClass("active");
                 $(".button-lang-en").addClass("active");
@@ -364,6 +375,44 @@ $(document).ready(function() {
                     self.conf.cms["section-intro-solutions"]["background-image"] = specifiedImg;
                 }
 
+                var displayParam = self._parameter(window.location, 'display');
+                if (displayParam != "") {
+                    switch (displayParam) {
+                    case 'NAVQUIZZFR':
+                        self.currentNav = 'NAVQUIZZ';
+                        $(".button-solutions").removeClass("active");
+                        $(".button-quizz").addClass("active");
+                        self.lang = "FR";
+                        $(".button-lang-en").removeClass("active");
+                        $(".button-lang-fr").addClass("active");
+                        break;
+                    case 'NAVQUIZZEN':
+                        self.currentNav = 'NAVQUIZZ';
+                        $(".button-solutions").removeClass("active");
+                        $(".button-quizz").addClass("active");
+                        self.lang = "EN";
+                        $(".button-lang-en").addClass("active");
+                        $(".button-lang-fr").removeClass("active");
+                        break;
+                    case 'NAVBENCHMARKFR':
+                        self.currentNav = 'NAVBENCHMARK';
+                        $(".button-quizz").removeClass("active");
+                        $(".button-solutions").addClass("active");
+                        self.lang = "FR";
+                        $(".button-lang-en").removeClass("active");
+                        $(".button-lang-fr").addClass("active");
+                        break;
+                    case 'NAVBENCHMARKEN':
+                        self.currentNav = 'NAVBENCHMARK';
+                        $(".button-quizz").removeClass("active");
+                        $(".button-solutions").addClass("active");
+                        self.lang = "EN";
+                        $(".button-lang-en").addClass("active");
+                        $(".button-lang-fr").removeClass("active");
+                        break;
+                    }
+                }
+
                 self._reDisplay();
                 self._animateShapes();
                 self._resizeVideoContainerHook();
@@ -406,7 +455,10 @@ $(document).ready(function() {
             this.currentNav = 'NAVBENCHMARK';
             $("#section-intro").hide();
             $("#section-quizz").hide();
-            $("#home-bg").css('background-image', 'url(' + this._getCMSValue('section-intro-solutions', 'background-image') + ')');
+            //$("#home-bg").css('background-image', 'url(' + this._getCMSValue('section-intro-solutions', 'background-image') + ')');
+            $("#home-bg").addClass("transparent");
+            $("#home-bg-open").addClass("transparent");
+            $("#home-bg-solutions").removeClass("transparent");
             this._setCMSValue('#section-intro-solutions h1', 'home', 'section-intro-solutions-title');
             this._setCMSValue('#section-intro-solutions p', 'home', 'section-intro-solutions-subtitle');
 
@@ -470,7 +522,10 @@ $(document).ready(function() {
             htmlapims += '</div>';
             htmlapims += '<a class="return-button" href="#"><span class="icon icon-shape-chevron"></span> ' + this._getCMSValue('home', 'section-quizz-return-button') + '</a>';
             $("form").hide();
-            $("#home-bg").css('background-image', 'url(' + self._getCMSValue('section-quizz', 'background-image') + ')');
+            //$("#home-bg").css('background-image', 'url(' + self._getCMSValue('section-quizz', 'background-image') + ')');
+            $("#home-bg").addClass("transparent");
+            $("#home-bg-open").removeClass("transparent");
+            $("#home-bg-solutions").addClass("transparent");
             $("#section-quizz").html(htmlapims);
             //-- generate matching solutions in section-solution --
             this.displaySolutionsDetailed(apims);
