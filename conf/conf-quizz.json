@@ -1,0 +1,302 @@
+{
+  "quizz": {
+    "ID1": {
+      "question-EN": "Do I have APIs?",
+      "question-FR": "Ai-je des APIs ?",
+      "answers": [
+        {
+          "answer-EN": "Yes",
+          "answer-FR": "Oui",
+          "goto": "2"
+        },
+        {
+          "answer-EN": "No",
+          "answer-FR": "Non",
+          "goto": "11"
+        }
+      ]
+    },
+    "ID11": {
+      "type": "leaf",
+      "fail": "NOAPIS",
+      "apim": []
+    },
+    "ID2": {
+      "question-EN": "What kind of developers do I have?",
+      "question-FR": "Quel type de développeurs ai-je ?",
+      "answers": [
+        {
+          "answer-EN": "None",
+          "answer-FR": "Aucun",
+          "goto": "21"
+        },
+        {
+          "answer-EN": "I have developers",
+          "answer-FR": "J'ai des développeurs",
+          "goto": "22"
+        },
+        {
+          "answer-EN": "I have teams of developers and experts, able to build a product",
+          "answer-FR": "J'ai des équipes de développeurs et des experts capables de construire un produit",
+          "goto": "23"
+        }
+      ]
+    },
+    "ID21": {
+      "question-EN": "Do I have a high budget?",
+      "question-FR": "Ai-je un budget conséquent ?",
+      "answers": [
+        {
+          "answer-EN": "No",
+          "answer-FR": "Non",
+          "goto": "31"
+        },
+        {
+          "answer-EN": "Yes",
+          "answer-FR": "Oui",
+          "goto": "32"
+        }
+      ]
+    },
+    "ID22": {
+      "question-EN": "Do I have a high budget?",
+      "question-FR": "Ai-je un budget conséquent ?",
+      "answers": [
+        {
+          "answer-EN": "No",
+          "answer-FR": "Non",
+          "goto": "33"
+        },
+        {
+          "answer-EN": "Yes",
+          "answer-FR": "Oui",
+          "goto": "34"
+        }
+      ]
+    },
+    "ID23": {
+      "question-EN": "What are my time to market and customization needs?",
+      "question-FR": "Quels sont mes besoins de time to market et de personnalisation ?",
+      "answers": [
+        {
+          "answer-EN": "Fast T2M and low customization",
+          "answer-FR": "T2M rapide et peu de personnalisation",
+          "goto": "35"
+        },
+        {
+          "answer-EN": "Medium T2M and medium customization",
+          "answer-FR": "T2M moyen et personnalisation moyenne",
+          "goto": "36"
+        },
+        {
+          "answer-EN": "Slow T2M and high customization",
+          "answer-FR": "T2M faible et personnalisation importante",
+          "goto": "37"
+        }
+      ]
+    },
+    "ID32": {
+      "question-EN": "Do I have a strong partnership with a vendor on my Information System which I'm satisfied with?",
+      "question-FR": "Ai-je un partenariat fort avec un éditeur au sein de mon système d'information, dont je suis satisfait ?",
+      "answers": [
+        {
+          "answer-EN": "Yes",
+          "answer-FR": "Oui",
+          "goto": "41"
+        },
+        {
+          "answer-EN": "No",
+          "answer-FR": "Non",
+          "goto": "42"
+        }
+      ]
+    },
+    "ID41": {
+      "question-EN": "Which vendor?",
+      "question-FR": "Quel éditeur ?",
+      "answers": [
+        {
+          "answer-EN": "AWS",
+          "answer-FR": "AWS",
+          "goto": "66"
+        },        {
+          "answer-EN": "Google",
+          "answer-FR": "Google",
+          "goto": "34"
+        },
+        {
+          "answer-EN": "IBM",
+          "answer-FR": "IBM",
+          "goto": "51"
+        },
+        {
+          "answer-EN": "Microsoft",
+          "answer-FR": "Microsoft",
+          "goto": "52"
+        }
+      ]
+    },
+    "ID42": {
+      "question-EN": "Do I have an ESB satisfying me?",
+      "question-FR": "Ai-je un ESB qui me satisfait ?",
+      "answers": [
+        {
+          "answer-EN": "Yes",
+          "answer-FR": "Oui",
+          "goto": "53"
+        },
+        {
+          "answer-EN": "No",
+          "answer-FR": "Non",
+          "goto": "54"
+        }
+      ]
+    },
+    "ID53": {
+      "question-EN": "Which vendor?",
+      "question-FR": "Quel editeur ?",
+      "answers": [
+        {
+          "answer-EN": "Tibco",
+          "answer-FR": "Tibco",
+          "goto": "61"
+        },
+        {
+          "answer-EN": "Axway",
+          "answer-FR": "Axway",
+          "goto": "62"
+        },
+        {
+          "answer-EN": "BROADCOM",
+          "answer-FR": "BROADCOM",
+          "goto": "63"
+        },
+        {
+          "answer-EN": "AG Software",
+          "answer-FR": "AG Software",
+          "goto": "64"
+        },
+        {
+          "answer-EN": "Mulesoft",
+          "answer-FR": "Mulesoft",
+          "goto": "65"
+        }
+      ]
+    },
+    "ID33": {
+      "type": "leaf",
+      "apim": [
+        "WSO2"
+      ]
+    },
+    "ID34": {
+      "type": "leaf",
+      "apim": [
+        "APIGEE"
+      ]
+    },
+    "ID35": {
+      "type": "leaf",
+      "apim": [
+        "3SCALE"
+      ]
+    },
+    "ID36": {
+      "type": "leaf",
+      "apim": [
+        "KONG",
+        "TYK",
+        "GRAVITEE"
+      ]
+    },
+    "ID37": {
+      "type": "leaf",
+      "fail":"DIY",
+      "apim": []
+    },
+    "ID51": {
+      "type": "leaf",
+      "apim": [
+        "IBM"
+      ]
+    },
+    "ID52": {
+      "type": "leaf",
+      "apim": [
+        "MICROSOFT"
+      ]
+    },
+    "ID61": {
+      "type": "leaf",
+      "apim": [
+        "TIBCO"
+      ]
+    },
+    "ID62": {
+      "type": "leaf",
+      "apim": [
+        "AXWAY"
+      ]
+    },
+    "ID63": {
+      "type": "leaf",
+      "apim": [
+        "BROADCOM"
+      ]
+    },
+    "ID64": {
+      "type": "leaf",
+      "apim": [
+        "AG"
+      ]
+    },
+    "ID65": {
+      "type": "leaf",
+      "apim": [
+        "MULESOFT"
+      ]
+    },
+    "ID66": {
+      "type": "leaf",
+      "apim": [
+        "AWS"
+      ]
+    },
+    "ID54": {
+      "type": "leaf",
+      "fail": "RFP",
+      "apim": []
+    },
+    "ID31": {
+      "type": "leaf",
+      "fail": "NODEVSNOMONEY",
+      "apim": []
+    }
+  },
+  "fails": [
+    {
+      "id": "NOAPIS",
+      "name": "404: NO APIs FOUND",
+      "description-EN": "Start doing APIs before thinking for an API Management solution :) <br/>However, tools providing a service catalogue or usage statistics may help you.",
+      "description-FR": "Commencez par bâtir des APIs avant d'implémenter ou d'intégrer une solution d'API Management :) <br/>Certaines briques permettant de disposer d'un catalogue de services ou de statistiques d'usages pourraient cependant vous aider. "
+    },
+    {
+      "id": "NODEVSNOMONEY",
+      "name": "404: NO DEVELOPERS FOUND",
+      "description-EN": "Current low-cost solutions require developers... You may need a bigger budget or to employ developers.",
+      "description-FR": "Les solutions peu onéreuses (open source) nécessitent des développeurs... Vous devez considérer un budget plus important pour les coûts de licence, ou bien employer des développeurs."
+    },
+    {
+      "id": "DIY",
+      "name": "404: NO SOLUTION FOUND",
+      "description-EN": "You must consider building your own API Management solution with your experts developers, to get a highly customized solution adapted to your constraints.",
+      "description-FR": "Armé de développeurs experts, vous devez considérer de construire votre propre solution d'API Management, adaptée à vos besoins, pour répondre à vos enjeux forts de personnalisation."
+    },
+    {
+      "id": "RFP",
+      "name": "404: NO PARTNERSHIP NOT FOUND",
+      "description-EN": "Send an RFP to vendors (Tibco, Axway, BROADCOM, Software AG, MULESOFT) or start thinking about employing developers to implement other solutions (3scale, Apigee, Gravitee, Kong, Tyk or WSO2).",
+      "description-FR": "Vous pouvez consulter via une RFP les éditeurs (Tibco, Axway, BROADCOM, Software AG, MULESOFT) ou bien employer des développeurs pour implémenter d'autres solutions (3scale, Apigee, Gravitee, Kong, Tyk or WSO2)."
+    }
+  ]
+}

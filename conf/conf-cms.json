@@ -1,0 +1,44 @@
+{
+  "home": {
+    "header-menu-quizz-EN": "Quizz",
+    "header-menu-quizz-FR": "Le Quizz",
+    "header-menu-solutions-EN": "Solutions benchmark",
+    "header-menu-solutions-FR": "Panorama des solutions",
+    "header-menu-publications-EN": "Publications <span class='icon icon-video-play'>",
+    "header-menu-publications-FR": "Publications <span class='icon icon-video-play'>",
+    "header-menu-download-EN": "Download Refcard <span class='icon icon-video-play'>",
+    "header-menu-download-FR": "Téléchargez la Refcard <span class='icon icon-video-play'>",
+    "bloc-quizz-title-EN": "WHICH API MANAGEMENT<br/> SOLUTION CAN HELP ME?",
+    "bloc-quizz-subtitle-EN": "Start the quizz!",
+    "bloc-quizz-title-FR": "QUELLE SOLUTION D'API MANAGEMENT PEUT M'AIDER ?",
+    "bloc-quizz-subtitle-FR": "Commencer le quizz !",
+    "bloc-solutions-title-EN": "API MANAGEMENT SOLUTIONS<br/> MARKET OVERVIEW",
+    "bloc-solutions-title-FR": "PANORAMA DES SOLUTIONS<br/> D'API MANAGEMENT",
+    "bloc-solutions-subtitle-EN": "See the benchmark!",
+    "bloc-solutions-subtitle-FR": "Consulter le benchmark",
+    "bloc-solutions-button-knowmore-EN": "See more",
+    "bloc-solutions-button-knowmore-FR": "Voir plus",
+    "section-quizz-return-button-EN": "Back",
+    "section-quizz-return-button-FR": "Retour",
+    "section-intro-solutions-title-EN": "Solutions benchmark.",
+    "section-intro-solutions-title-FR": "Panorama <br />des solutions.",
+    "section-intro-solutions-subtitle-EN": "Over the years OCTO has acquired the role of opinion leader on API subjects, thanks to experience gathered by consultant teams on the field, when designing and bulding APIs.",
+    "section-intro-solutions-subtitle-FR": "Si OCTO a acquis au fil des ans un positionnement de leader d’opinion sur les sujets API, c’est grâce à l'expérience de nos consultants aquise sur le terrain lors de la mise en oeuvre d'API.",
+    "footer-button-legal-EN": "Legal & Privacy",
+    "footer-button-legal-FR": "Legal & Privacy",
+    "footer-button-press-EN": "Press",
+    "footer-button-press-FR": "Presse",
+    "footer-button-blog-EN": "Blog",
+    "footer-button-blog-FR": "Blog",
+    "footer-button-contact-EN": "Contact",
+    "footer-button-contact-FR": "Contact",
+    "background-image": "./skin2/img/Refcard_API_Management.jpg",
+    "background-image-mobile": "./skin2/img/Refcard_API_Management_jaune_siteAPI-mobile.jpg"
+  },
+  "section-quizz": {
+    "background-image": "./skin2/img/Refcard_open_OK_1024x620.png"
+  },
+  "section-intro-solutions": {
+    "background-image": "./skin2/img/canard_siteAPI.png"
+  }
+}

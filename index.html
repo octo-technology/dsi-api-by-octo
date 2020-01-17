@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quelle solution d'API Management? 3Scale, Apigee, AWS, Axway, Broadcom, Gravitee, IBM, Kong, Microsoft, Mulesoft, Software AG, Tibco, Tyk, Wso2">
+    <meta name="keywords" content="Quelle solution d'API Management, API, API Management, APIM, API Security, API Gateway, API Management Quizz, API Management benchmark, Comparatif API Management, 3Scale, Apigee, AWS, Axway, Broadcom, Gravitee, IBM, Kong, Microsoft, Mulesoft, Software AG, Tibco, Tyk, Wso2"/>
+    <meta name="author" content="">
+    <link rel="icon" href="./skin2/img/favicon-octo.png">
+    <title>API by OCTO</title>
+    <link href="./skin2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./skin2/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./skin2/css/style.min.css">
+</head>
+
+<body>
+
+<div id="home-bg-container">
+    <div id="home-bg" style="background-image: url(./skin2/img/Refcard_API_Management_jaune_siteAPI.jpg);"></div>
+</div>
+<div id="nav-overlay">
+    <a href="http://blog.octo.com" target="_blank" class="blog-link">Blog <span class='icon icon-video-play'></span></a>
+    <a href="https://www.octo.com/contact/" target="_blank" class="contact-link">Contact <span class='icon icon-video-play'></span></a>
+    <a href="#" class="scroll-to-link">Scroll</a>
+</div>
+
+<div class="shapes">
+    <div class="shape-container shape-c">
+        <span class="icon icon-shape-c" style="transform: translateX(710.399px) translateY(608.341px);"></span>
+        <svg viewBox="0 0 1024 768">
+            <path fill="none" stroke="#ffffff" stroke-width="2" d="M185.5,296.5c36.63-116.18,131.17-174.88,170-199c37.95-23.56,131.78-81.83,250-61 c21.19,3.73,150.61,26.54,178,109c23.92,72.03-55.77,112.08-47,241c3.53,51.98,17.85,65.56,12,115c-6.89,58.17-34.93,108.76-62,139 c-82.35,92.01-260.7,113.03-386,27C171.85,579.17,149.01,412.25,185.5,296.5z"></path>
+        </svg>
+    </div>
+    <div class="shape-container shape-target">
+        <span class="icon icon-shape-target" style="transform: translateX(316.601px) translateY(148.496px);"></span>
+        <svg viewBox="0 0 1024 768">
+            <path fill="none" stroke="#ffffff" stroke-width="2" d="M454.5,398.5c-124.2,7.51-273.94-49.38-283-113c-8.44-59.24,102.36-143.64,209-149 c64.7-3.25,68.97,25.55,165,47c158.1,35.31,221.23-26.09,325,33c56.51,32.18,73.21,70.57,77,80c19.73,49.05,14.22,119.57-26,149 c-44.16,32.31-115.11,4.05-178-21c-26.12-10.4-30.67-15.07-49-23C606.36,363.38,532.4,393.79,454.5,398.5z"></path>
+        </svg>
+    </div>
+    <div class="shape-container shape-logo">
+        <span class="icon icon-shape-logo" style="transform: translateX(261.427px) translateY(565.85px) rotate(-49.6018deg);"></span>
+        <svg viewBox="0 0 1024 768">
+            <path fill="none" stroke="#ffffff" stroke-width="2" d="M524.02,263.23c60.11-108.94,188.3-205,246.89-178.61c54.57,24.57,66.57,163.34,14.04,256.29 c-31.87,56.4-58.49,44.59-127.99,114.24c-114.42,114.67-96.33,200.86-201.78,256.9c-57.43,30.52-98.78,24.09-108.79,22.24 c-51.99-9.58-108.62-51.97-111.96-101.69c-3.67-54.59,58.17-99.41,112.99-139.14c22.76-16.5,29.14-17.84,45.65-29.09 C472.44,410.32,486.32,331.56,524.02,263.23z"></path>
+        </svg>
+    </div>
+    <div class="shape-container shape-play">
+        <span class="icon icon-shape-play" style="transform: translateX(374.489px) translateY(522.561px) rotate(129.922deg);"></span>
+        <svg viewBox="0 0 1024 768">
+            <path fill="none" stroke="#ffffff" stroke-width="2" d="M706.73,207.93c56.94,61.89,62.52,134.71,64.05,159.45c1.39,22.55,3.35,54.27-10.49,90.39 c-22.68,59.19-79.55,108.71-142.06,122.44c-89.26,19.61-104.82-52.46-245.98-57.74c-57.14-2.14-92.31,8.26-155.77-11.03 c-25.72-7.82-58.49-17.78-89.45-44.61c-73.78-63.93-71.31-166.44-70.8-179.36c2.91-74.08,42.1-174.53,115.59-198 c72.32-23.09,104.43,51.79,237.62,51.74c69.3-0.03,79.33-20.31,142.18-10.68C579.41,134.79,650.44,146.74,706.73,207.93z"></path>
+        </svg>
+    </div>
+    <div class="shape-container shape-plus">
+        <span class="icon icon-shape-plus"></span>
+    </div>
+</div>
+
+<header>
+    <img id="logo-octo" src="./skin2/img/logo-octo-white.svg" alt="OCTO logo"/>
+    <nav id="navbar1" class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="button-quizz nav-item">
+                        <a class="nav-link" href="#">Quizz</a>
+                    </li>
+                    <li class="button-solutions nav-item">
+                        <a class="nav-link" href="#">Benchmark</a>
+                    </li>
+                    <li class="button-publications nav-item">
+                        <a class="nav-link" href="https://www.octo.com/publications/" target="_blank">Publications</a>
+                    </li>
+                    <li class="button-contact nav-item">
+                        <a class="nav-link" href="https://www.octo.com/contact/" target="_blank">Nous contacter</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-md-0">
+                    <li class="button-lang-fr nav-item active">
+                        <a class="nav-link" href="#">Fr</a>
+                    </li>
+                    <li class="button-lang-en nav-item last">
+                        <a class="nav-link" href="#">En</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<header>
+    <nav id="navbar2" class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container">
+            <a id="button-brand" class="navbar-brand" href="#">
+                <img src="./skin2/img/logo-mini-color.svg" alt="O" class="logo-alt">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="button-quizz nav-item">
+                        <a class="nav-link" href="#">Quizz</a>
+                    </li>
+                    <li class="button-solutions nav-item">
+                        <a class="nav-link" href="#">Benchmark</a>
+                    </li>
+                    <li class="button-publications nav-item">
+                        <a class="nav-link" href="https://www.octo.com/publications/" target="_blank">Publications</a>
+                    </li>
+                    <li class="button-contact nav-item">
+                        <a class="nav-link" href="https://www.octo.com/contact/" target="_blank">Nous contacter</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-md-0">
+                    <li class="button-lang-fr nav-item active">
+                        <a class="nav-link" href="#">Fr</a>
+                    </li>
+                    <li class="button-lang-en nav-item">
+                        <a class="nav-link" href="#">En</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="container" id="section-intro">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bloc start-quizz-bloc">
+                    <div class="">
+                        <h2 class="">WHICH API MANAGEMENT SOLUTION<br/> COULD<br/> HELP ME?</h2>
+                        <h3 class="">START THE QUIZZ!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bloc solutions-bloc">
+                    <div class="">
+                        <h2 class="">API MANAGEMENT SOLUTIONS OVERVIEW</h2>
+                        <h3 class="">See the benchmark!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="section-quizz">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body quizz">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="section-intro-solutions">
+        <div class="row">
+            <div class="col-lg-8"><h1>Panorama des solutions.</h1></div>
+            <div class="col-lg-4">
+                <p>Si OCTO a acquis au fil des ans un positionnement de leader d’opinion, c’est grâce à une politique éditoriale qui privilégie des contenus utiles, écrits par nos experts et mis en valeur par la créativité de nos équipes artistiques.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="section-solutions">
+        <div id="solutionsplaceholder">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-3SCALE"><h2>3scale.</h2>
+                        <p>3scale est une plateforme crée en 2007 qui permet de manager (partager, sécuriser, contrôler
+                            et monétiser) ses APIs pour des usages internes ou externes. La gateway est écrite en Lua et
+                            les portails en Ruby. La solution a été rachetée par Red Hat en 2016 et open-sourcée.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- 3scale"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;L’aura/le support Red Hat autour du produit<br></li>
+                                <li>&gt;&nbsp;Excellent time to market de la mise en œuvre avec le mode hybride<br></li>
+                                <li>&gt;&nbsp;Pure player de l'API Management (il ne s'agit pas d'une solution ESB
+                                    offrant des fonctionnalités de transcodage mais de management d'API)<br></li>
+                                <li>&gt;&nbsp;Solution basée sur une API (API first) de très bonne qualité et bien
+                                    documentée qui permet d'automatiser le paramétrage et le déploiement (DEVOPS / infra
+                                    as code)<br></li>
+                                <li>&gt;&nbsp;Pricing compétitif pour la version PRO<br></li>
+                                <li>&gt;&nbsp;Communauté présente sur internet (on trouve des réponses en cas de
+                                    problème)<br></li>
+                                <li>&gt;&nbsp;Solution <a href="https://github.com/3scale" target="_blank">open
+                                    source</a><br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Complexité de la mise en œuvre de la sécurité (via LUA) qui nécessite des
+                                    développeurs expérimentés<br></li>
+                                <li>&gt;&nbsp;Très orientée déploiement hybride avec des portails en SaaS initialement
+                                    (si un contexte on-premise est souhaité)<br></li>
+                                <li>&gt;&nbsp;Mais revirement on-premise de la stratégie depuis le rachat de Red Hat qui
+                                    incite à l'utilisation d'OpenShift et de Red Hat SSO (Keycloak)<br></li>
+                                <li>&gt;&nbsp;Pas de fonctionnalité de transcodage (ce qui peut être perçu comme un
+                                    avantage) sauf si utilisé avec FUSE ESB proposé par Red Hat<br></li>
+                                <li>&gt;&nbsp;Gestion de SOAP sommaire (ce qui peut être perçu comme un avantage)<br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-APIGEE"><h2>Apigee.</h2>
+                        <p>Apigee est une plateforme d'API management orientée cloud, permettant de sécuriser et de
+                            manager des API, fondée en 2004 sous le nom de Sonoa Systems. Apigee a été rachetée par
+                            Google en 2016.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- Apigee"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Le support Google autour du produit est efficace et agréable<br></li>
+                                <li>&gt;&nbsp;Solution packagée mais developer-friendly (communauté et documentation sur
+                                    internet)<br></li>
+                                <li>&gt;&nbsp;Le produit est très flexible pour répondre à des besoins spécifiques, car
+                                    s'appuie sur un mécanisme de paramétrage XML de policies en point &amp; click qu'on
+                                    assemble comme des LEGO®<br></li>
+                                <li>&gt;&nbsp;Pertinence de l'offre en mode full SaaS<br></li>
+                                <li>&gt;&nbsp;Pure player API, avec une bonne maturité : déploiement multi-tenant et
+                                    multi-environnement, monitoring de bout en bout, push notifications...<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Le coût de la licence élevé par rapport aux autres solutions<br></li>
+                                <li>&gt;&nbsp;Marketing de l'offre et produit très orienté ESB (construction des API en
+                                    façade via des policies en point &amp; click, plutôt que Management d’API) avec un
+                                    risque de vendor lock-in. On finit par développer beaucoup de fonctionnalités dans
+                                    le produit y compris la sécurisation OAuth2/OIDC.<br></li>
+                                <li>&gt;&nbsp;Pas de mode hybride pour le moment: offre très (trop) orienté SaaS<br>
+                                </li>
+                                <li>&gt;&nbsp;Architecture assez monolithique<br></li>
+                                <li>&gt;&nbsp;Maintenabilité du paramétrage des policies et de la programmation dans le
+                                    produit<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-AWS"><h2>AWS.</h2>
+                        <p>AWS TODO.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- AWS"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;TODO<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;TODO<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-AXWAY"><h2>Axway.</h2>
+                        <p>La solution d'API Management AXWAY est un produit Français détenu par Sopra-Steria.
+                            Historiqueemnt c'est un ESB qui en acquérant la solution Vordel d'API Management en 2011 a
+                            migré vers une solution API.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- Axway"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Maturité constatée : beaucoup déployé en France dans des contextes SOA<br>
+                                </li>
+                                <li>&gt;&nbsp;Fonctionnalités ESB de transcodage<br></li>
+                                <li>&gt;&nbsp;Mode hybrid et multi-datacenter<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Mauvais time to market de la mise en œuvre<br></li>
+                                <li>&gt;&nbsp;Pas de communauté : dépendance vis à vis de l’éditeur<br></li>
+                                <li>&gt;&nbsp;Complexité et non-flexibilité d’une solution paquagée<br></li>
+                                <li>&gt;&nbsp;Mindest ESB plus qu'API<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-BROADCOM"><h2>Broadcom.</h2>
+                        <p>Créer, sécuriser, délivrer et manager des APIs en gérant le cycle de vie total via la
+                            solution d'API Management de CA Technologies</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- Broadcom"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Maturité constatée : beaucoup déployé en France dans des contextes SOA<br>
+                                </li>
+                                <li>&gt;&nbsp;Fonctionnalités ESB de transcodage<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Mauvais time to market de la mise en œuvre<br></li>
+                                <li>&gt;&nbsp;Pas de communauté : dépendance vis à vis de l’éditeur<br></li>
+                                <li>&gt;&nbsp;Complexité et non-flexibilité d’une solution paquagée<br></li>
+                                <li>&gt;&nbsp;Mindest ESB et non API<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-GRAVITEE"><h2>Gravitee.</h2>
+                        <p>GRAVITEE est une solution <a href="https://github.com/gravitee-io" target="_blank">open
+                            source</a> d'API Management et d'Access Management <i>made in France</i>.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- Gravitee"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Se concentre sur les fonctionnalités essentielles (gestion des usages,
+                                    authentification et authorisation...)<br></li>
+                                <li>&gt;&nbsp;Support N1/N2 réactif et agréable<br></li>
+                                <li>&gt;&nbsp;Positionnement de challenger sur le marché : apport d'évolutions
+                                    régulier<br></li>
+                                <li>&gt;&nbsp;Mise en place simple et rapide<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Solution trop jeune sur certains aspects (documentation, portail
+                                    développeur qui nécessite de nombreux re-développements...)<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-IBM"><h2>IBM.</h2>
+                        <p>IBM API Connect est une plateforme d'API Management contenant un ensemble de solutions : API
+                            Manager, Gateway, portail développeur, Cloud Manager... En 2018, IDC.com annonce qu'IBM est
+                            en position de leader avec 22% de parts de marché.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- IBM"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Support d'IBM<br></li>
+                                <li>&gt;&nbsp;Produit accessible à des non-développeurs : approche clickodrome,
+                                    possibilité de générer des APIs à partir de modélisations...<br></li>
+                                <li>&gt;&nbsp;Intégration facilitée lorsqu'on travaille déjà avec des produits IBM : il
+                                    est par exemple possible de gérer des APIs REST générées à partir d'applications
+                                    mainframe écrites en COBOL<br></li>
+                                <li>&gt;&nbsp;Portail développeur agréable et personnalisable via des thèmes<br></li>
+                                <li>&gt;&nbsp;Intégration de LoopBack et <a href="https://github.com/strongloop"
+                                                                            target="_blank">Strongloop</a> (projets open
+                                    source NodeJS)<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Tire un vaste panel de solutions IBM : Datapower, IBM Cloud, etc. Avec un
+                                    réel risque de vendor lock-in<br></li>
+                                <li>&gt;&nbsp;Coût de la licence<br></li>
+                                <li>&gt;&nbsp;Impossible de se passer du support IBM en cas d'incidents<br></li>
+                                <li>&gt;&nbsp;Quid de la maintenabilité du code généré ? Passer par une telle solution
+                                    lie encore plus le Système d'Information à IBM<br></li>
+                                <li>&gt;&nbsp;Faible présence en France et peu de références d’API en production<br>
+                                </li>
+                                <li>&gt;&nbsp;Complexité de la version On-Premise<br></li>
+                                <li>&gt;&nbsp;Le time to market constaté de la mise en œuvre est généralement
+                                    important<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-KONG"><h2>Kong.</h2>
+                        <p>Kong Inc. offre une plateforme du même nom, basée sur Nginx et Cassandra/PostreSQL, pour
+                            manager, monitorer et publier des API et des Microservices. Le produit a été développé
+                            initialement en 2009 à Milan. En 2015 la gateway a été open-sourcée et est aujourd'hui très
+                            populaire.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- Kong"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Solution basée sur une API (API first) de très bonne qualité et bien
+                                    documentée<br></li>
+                                <li>&gt;&nbsp;Haute personnalisation possible via une mécanisme de plugin. Kong Hub
+                                    permet d'accéder à des plugins gratuits ou payants qui permettent d'implémenter
+                                    certaines fonctionnalités (comme API_KEY et Bearer token)<br></li>
+                                <li>&gt;&nbsp;La gateway est <a href="https://github.com/Kong/kong" target="_blank">open
+                                    source</a> et largement déployée<br></li>
+                                <li>&gt;&nbsp;Architecture et performances de la gateway<br></li>
+                                <li>&gt;&nbsp;Couplage avec Auth0 simple via le plugin JWT<br></li>
+                                <li>&gt;&nbsp;Pure player de l'API Management (il ne s'agit pas d'un ESB maquillé)<br>
+                                </li>
+                                <li>&gt;&nbsp;Kong complète sa ligne de produits en permanence (Vitals, Immunity ou
+                                    encore Kuma sont des produits sortis en 2018/2019), lui permettant d'être présent
+                                    sur l'API Management et les microservices (Kubernetes, Services mesh)<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Le développement de Plugins en LUA nécessite des développeurs expérimentés<br>
+                                </li>
+                                <li>&gt;&nbsp;La version Enterprise Edition (EE) a un coût de licence conséquent qui
+                                    permet d'accéder à des produits de qualité (portail développeur, monitoring, plugins
+                                    entreprises...) mais pas indispensables.<br></li>
+                                <li>&gt;&nbsp;Pas de système de monétisation de l'API pour le moment<br></li>
+                                <li>&gt;&nbsp;Connaissances légères sur l'accompagnement autour des problématiques de
+                                    sécurisation d'API OIDC, OAuth2<br></li>
+                                <li>&gt;&nbsp;Acteur n'ayant pas les épaules d'un Google ou d'un Red Hat pour
+                                    accompagner les entreprises. On peut légitimement se demander quel grand groupe va
+                                    racheter la solution ?<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-MICROSOFT"><h2>Microsoft.</h2>
+                        <p><a href="https://azure.microsoft.com/fr-fr/services/api-management/" target="_blank">MICROSOFT
+                            AZURE API Management</a> permet de publier des APIs au monde extérieur, à des partenaires et
+                            au développeurs internes afin d'exposer leur données et data services. MICROSOFT a racheté
+                            en 2013 la startup de Washington-D.C. Apiphany. La solution offre des fonctionalités
+                            analitics et de securisation des ressources, un portail développeur pour améliorer la
+                            détectabilité des APIs avec des équipes internes, des partenaires externes et des clients,
+                            un module de transformation de services existants via la mise en oeuvre de façades.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- Microsoft"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Stratégie full SaaS<br></li>
+                                <li>&gt;&nbsp;Intégration dans un écosystème MS AZURE<br></li>
+                                <li>&gt;&nbsp;Support de l’éditeur Microsoft<br></li>
+                                <li>&gt;&nbsp;Bundle de APIphany<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Point d’attention sur le “vendor locking” avec Microsoft<br></li>
+                                <li>&gt;&nbsp;Rarement déployé (en France)<br></li>
+                                <li>&gt;&nbsp;Customisation du portail encore très limité<br></li>
+                                <li>&gt;&nbsp;Très peu de documentation sur la sécurisation et couplage fort avec les
+                                    solutions Azure<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-MULESOFT"><h2>Mulsoft.</h2>
+                        <p>MuleSoft, Inc. est une société basée à San Francisco, Californie, qui fournit une solution
+                            d'intégration pour connecter les applications, les données et les terminaux. En 2006,
+                            Mulesoft fournie un ESB puis une plateforme d'intégration "as a service" (iPaaS), avec des
+                            fonctionnalités de gestion d'APIs : un centre de design pour designer et construire des
+                            APIs, un centre de management pour analyser, manager, et monitorer les APIs, un moteur de
+                            runtime pour connecter les applications enterprise on-premises ou cloud afin d'éliminer les
+                            besoins d'intégration spécifiques point-à-point. En Mai 2018, Mulesoft est acquise par
+                            Salesforce.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- Mulsoft"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Maturité constatée sur la plateforme Digital et la SOA<br></li>
+                                <li>&gt;&nbsp;Fonctionnalités ESB de transcodage<br></li>
+                                <li>&gt;&nbsp;Quelques références d'API et de portail développeur en production<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Mauvais time to market de la mise en œuvre<br></li>
+                                <li>&gt;&nbsp;Pas de communauté : dépendance vis à vis de l’éditeur<br></li>
+                                <li>&gt;&nbsp;Complexité et non-flexibilité d’une solution paquagée<br></li>
+                                <li>&gt;&nbsp;Mindest ESB, automatisation des processus de l'entreprise plus qu'API<br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-AG"><h2>Software AG.</h2>
+                        <p>Software AG est un éditeur de logiciel allemand qui offre une solution "Digital Business
+                            Platform" permettant l‘intégration, la gestion des processus, le développement
+                            d’applications adaptives, l’analytique en temps réel et la gestion d‘architecture
+                            d’entreprise. La solution d'API Management propose les fontionalités : gateway &amp;
+                            microgateway, portail développeur, statistiques d'usage &amp; quotas, publication &amp;
+                            sécurisation sur le cloud.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- Software AG"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Maturité constatée sur la plateforme Digital et la SOA<br></li>
+                                <li>&gt;&nbsp;Fonctionnalités ESB de transcodage<br></li>
+                                <li>&gt;&nbsp;Quelques références d'API et de portail développeur en production<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Mauvais time to market de la mise en œuvre<br></li>
+                                <li>&gt;&nbsp;Pas de communauté : dépendance vis à vis de l’éditeur<br></li>
+                                <li>&gt;&nbsp;Complexité et non-flexibilité d’une solution paquagée<br></li>
+                                <li>&gt;&nbsp;Mindest ESB, automatisation des processus de l'entreprise plus qu'API<br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-TIBCO"><h2>TIBCO Cloud™ Mashery® API Management.</h2>
+                        <p>TIBCO Software Inc. est une companie américaine qui fournit une plateforme d'integration,
+                            d'analytics des festion d'évenements pour les entreprises. Il s'agit d'un middleware ESB qui
+                            permet la communication temps réele en contexte B2B,B2C. En Août 2015, TIBCO a racheté
+                            Mashery, une solution d'API management préalablement rachetée par Intel.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png"
+                                    alt="cons- TIBCO Cloud™ Mashery® API Management"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Stratégie full SaaS<br></li>
+                                <li>&gt;&nbsp;Intégration dans un écosystème MS AZURE<br></li>
+                                <li>&gt;&nbsp;Support de l’éditeur Microsoft<br></li>
+                                <li>&gt;&nbsp;Bundle de APIphany<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Point d’attention sur le “vendor locking” avec Microsoft<br></li>
+                                <li>&gt;&nbsp;Rarement déployé (en France)<br></li>
+                                <li>&gt;&nbsp;Customisation du portail encore très limité<br></li>
+                                <li>&gt;&nbsp;Très peu de documentation sur la sécurisation et couplage fort avec les
+                                    solutions Azure<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-TYK"><h2>Tyk.</h2>
+                        <p>Tyk est une plateforme d'API Management développée initialement à Londres en 2014, qui offre
+                            une gateway <a href="https://github.com/TykTechnologies/tyk" target="_blank">open source</a>
+                            écrite en Go, un portail développeur et un tableau de bord sur les API avec des
+                            fonctionnalités d'analytiques.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- Tyk"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Dashboard pratique, offrant des rapports statistiques simples et déjà
+                                    intégrés<br></li>
+                                <li>&gt;&nbsp;Solution simple et accessible offrant un bon time to market en SaaS<br>
+                                </li>
+                                <li>&gt;&nbsp;Coût de licence attractif et progressif<br></li>
+                                <li>&gt;&nbsp;Pure player de l'API Management (il ne s'agit pas d'un ESB maquillé)<br>
+                                </li>
+                                <li>&gt;&nbsp;Le support N1/N2 est réactif et très sympathique<br></li>
+                                <li>&gt;&nbsp;Utilisation en SaaS ou on-premise de qualité<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Fonctionnalités manquantes et BUG pour le mode Hybride. Par exemple, la
+                                    gateway Saas reste active<br></li>
+                                <li>&gt;&nbsp;Sécurisation API basique : Le flow client credentials OAuth2 utilise des
+                                    tokens opaques et ne gère pas les scopes. Pas d'implémentation OIDC (obligation
+                                    d'utiliser une solution tierce)<br></li>
+                                <li>&gt;&nbsp;Plugins JS laborieux à mettre en place<br></li>
+                                <li>&gt;&nbsp;La documentation souffre de cohérence globale et de mises à jours (il
+                                    arrive de devoir lire le code GO pour comprendre certains mécanismes)<br></li>
+                                <li>&gt;&nbsp;Compétence du support N3 (faible compréhension des problématiques de
+                                    sécurisation OIDC/OAuth2, de performance, de déploiement, etc.)<br></li>
+                                <li>&gt;&nbsp;L'API est d'une qualité perfectible au regard des standards REST
+                                    (identifiants de ressources non homogènes, etc.)<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bloc-edito" id="bloc-solution-WSO2"><h2>WSO2.</h2>
+                        <p>WSO2 est un fournisseur de technologie open-source fondé en 2006. Il offre une plate-forme
+                            d'entreprise pour l'intégration d'interfaces de programmation d'applications, d'applications
+                            et de services Web localement et sur Internet.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link active button-pros" href="#"><img
+                                    src="./skin2/img/plus-jaune.png" alt="cons- WSO2"></a></li>
+                            <li class="nav-item"><a class="nav-link button-cons" href="#"><img
+                                    src="./skin2/img/moins-jaune.png" alt="cons- '+ apim.name + '"></a></li>
+                        </ul>
+                        <div class="bloc">
+                            <ul class="bloc-pros">
+                                <li>&gt;&nbsp;Solution <a href="https://github.com/wso2" target="_blank">open source</a><br>
+                                </li>
+                                <li>&gt;&nbsp;Solution connue et éprouvée depuis la vague ESB-light<br></li>
+                                <li>&gt;&nbsp;Solution pertinente dans un ecosystème Java<br></li>
+                            </ul>
+                            <ul class="bloc-cons">
+                                <li>&gt;&nbsp;Documentation complexe (plus de 1600 pages...)<br></li>
+                                <li>&gt;&nbsp;Retours d’expérience mitigés : solution complexe à mettre en oeuvre,
+                                    comportements contre-intuitifs, personnalisation compliquée à mettre en oeuvre,
+                                    nombreuses limitations...<br></li>
+                                <li>&gt;&nbsp;Faible communauté d'entraide sur internet lorsque l'on rencontre des
+                                    problèmes sur des sujet avancés : problématiques de sécurisation d'API OIDC,
+                                    OAuth2<br></li>
+                                <li>&gt;&nbsp;Forte emprunte ESB-light (brique de transcodage)<br></li>
+                                <li>&gt;&nbsp;WSO2 éditant une suite de logiciels qui s'intègrent les uns aux autres
+                                    (analytics, ESB, authentification...), il y a un risque de vendor lock-in<br></li>
+                                <li>&gt;&nbsp;Le coût des licences on-premise : la facturation se fait à l'instance et
+                                    grimpe donc très rapidement<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <ul class="links">
+                    <li id="button-legal"><a href="https://www.octo.com/mentions-legales/" target="_blank">Légal</a></li>
+                    <li id="button-press"><a href="https://www.octo.com/la-presse/" target="_blank">Presse</a></li>
+                    <li id="button-blog"><a href="http://blog.octo.com" target="_blank">Blog</a></li>
+                    <li id="button-contact"><a href="https://www.octo.com/contact/" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <img src="./skin2/img/logo-tiabw.svg" alt="There is a better way">
+            </div>
+            <div class="col-md-5">
+                <ul class="social">
+                    <li><a href="https://twitter.com/OCTOTechnology" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    <li><a href="https://www.facebook.com/OctoTechnology" target="_blank"><span class="icon icon-facebook"></span></a></li>
+                    <li><a href="https://www.linkedin.com/company/octo-technology/" target="_blank"><span class="icon icon-linkedin"></span></a></li>
+                    <li><a href="https://www.instagram.com/octotechnology/" target="_blank"><span class="icon icon-instagram"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./skin2/js/vendor/jquery-3.3.1.min.js"></script>
+<script src="./skin2/js/vendor/bootstrap.min.js"></script>
+<script src="./skin2/js/vendor/anime.min.js"></script>
+<script src="skin2/js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="9.0875559mm"
+   height="9.0875559mm"
+   viewBox="0 0 32.200001 32.200001"
+   id="svg10609"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="linkedin.svg">
+  <defs
+     id="defs10611" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-480.32857"
+     inkscape:cy="-38.185704"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1680"
+     inkscape:window-height="1001"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata10614">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-283.9,-461.9765)">
+    <g
+       id="g5243"
+       transform="translate(-663.69998,-1254.0235)">
+      <rect
+         id="linkedin_x5F_background_7_"
+         x="947.59998"
+         y="1716"
+         class="st2"
+         width="32.200001"
+         height="32.200001"
+         style="fill:#0e2356" />
+      <g
+         id="linkedin_x5F_logo_7_">
+        <rect
+           id="i_x5F_2_7_"
+           x="955.5"
+           y="1729.3"
+           class="st6"
+           width="3.5999999"
+           height="10.8"
+           style="fill:#ffffff" />
+        <path
+           id="i_x5F_1_7_"
+           class="st6"
+           d="m 957.3,1724.1 c -1.2,0 -2,0.8 -2,1.9 0,1 0.8,1.9 2,1.9 l 0,0 c 1.3,0 2,-0.8 2,-1.9 0,-1.1 -0.7,-1.9 -2,-1.9 z"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" />
+        <path
+           id="n_7_"
+           class="st6"
+           d="m 967.9,1729.1 c -1.9,0 -2.8,1 -3.2,1.8 l 0,-1.5 -3.6,0 c 0,1 0,10.8 0,10.8 l 3.6,0 0,-6 c 0,-0.3 0,-0.6 0.1,-0.9 0.3,-0.6 0.9,-1.3 1.8,-1.3 1.3,0 1.8,1 1.8,2.4 l 0,5.8 3.6,0 0,-6.2 c 0.1,-3.4 -1.7,-4.9 -4.1,-4.9 z"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" />
+      </g>
+    </g>
+  </g>
+</svg>
