@@ -294,9 +294,9 @@
     },
     {
       "id": "RFP",
-      "name": "404: NO PARTNERSHIP NOT FOUND",
-      "description-EN": "Send an RFP to vendors (Tibco, Axway, BROADCOM, Software AG, MULESOFT) or start thinking about employing developers to implement other solutions (3scale, Apigee, Gravitee, Kong, Tyk or WSO2).",
-      "description-FR": "Vous pouvez consulter via une RFP les éditeurs (Tibco, Axway, BROADCOM, Software AG, MULESOFT) ou bien employer des développeurs pour implémenter d'autres solutions (3scale, Apigee, Gravitee, Kong, Tyk or WSO2)."
+      "name": "404: NO PARTNERSHIP FOUND",
+      "description-EN": "Send an RFP to vendors (Amazon API Gateway, Apigee, Axway, Broadcom, IBM, Microsoft, Mulesoft, Software AG, TIBCO Cloud™ Mashery® API Management.) or start thinking about employing developers to implement other solutions (3scale, Gravitee, Kong, Tyk or WSO2).",
+      "description-FR": "Vous pouvez consulter via une RFP les éditeurs (Amazon API Gateway, Apigee, Axway, Broadcom, IBM, Microsoft, Mulesoft, Software AG, TIBCO Cloud™ Mashery® API Management.) ou bien employer des développeurs pour implémenter d'autres solutions (3scale, Gravitee, Kong, Tyk ou WSO2)."
     }
   ]
 }

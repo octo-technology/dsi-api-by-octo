@@ -83,8 +83,6 @@ $(document).ready(function() {
         },
         _backHistoryHook: function() {
             var back = this.history.shift();
-            console.log("back:");
-            console.log(back);
             if(back[0]=='NAVINTRO') {
                 this.displayIntro();
             } else if(back[0]=='NAVQUIZZ') {
@@ -455,7 +453,6 @@ $(document).ready(function() {
             this.currentNav = 'NAVBENCHMARK';
             $("#section-intro").hide();
             $("#section-quizz").hide();
-            //$("#home-bg").css('background-image', 'url(' + this._getCMSValue('section-intro-solutions', 'background-image') + ')');
             $("#home-bg").addClass("transparent");
             $("#home-bg-open").addClass("transparent");
             $("#home-bg-solutions").removeClass("transparent");
@@ -522,7 +519,6 @@ $(document).ready(function() {
             htmlapims += '</div>';
             htmlapims += '<a class="return-button" href="#"><span class="icon icon-shape-chevron"></span> ' + this._getCMSValue('home', 'section-quizz-return-button') + '</a>';
             $("form").hide();
-            //$("#home-bg").css('background-image', 'url(' + self._getCMSValue('section-quizz', 'background-image') + ')');
             $("#home-bg").addClass("transparent");
             $("#home-bg-open").removeClass("transparent");
             $("#home-bg-solutions").addClass("transparent");
@@ -561,7 +557,6 @@ $(document).ready(function() {
             }
 
             $("#solutionsplaceholder").html(htmlapims);
-            //$("#section-solutions").html(htmlapims);
 
             // for all apims, attach event on click to display pros & cons
             apims.forEach(function(apim) {
@@ -635,7 +630,6 @@ $(document).ready(function() {
             var html = '';
             html += '<div class="col-md-12">';
             html += '<div class="bloc-edito" id="bloc-solution-' + apim.id + '">';
-            //html += '<img class="logo" src="' + apim.logo + '" alt="' + apim.name + '">';
             html += '<h2>' + apim.name + '.</h2>';
             html += '<p>' + apim["description-" + this.lang] + '</p>';
 
