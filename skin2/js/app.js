@@ -239,13 +239,8 @@ $(document).ready(function() {
                 $("#section-intro").hide();
                 $("#section-intro-solutions").hide();
                 $("#section-solutions").hide();
-                if($(window).width()<768) {
-                    $("#home-bg").css('background-image', 'url(' + self._getCMSValue('home', 'background-image-mobile') + ')');
-                } else {
-                    $("#home-bg").css('background-image', 'url(' + self._getCMSValue('home', 'background-image') + ')');
-                }
-                $("#home-bg").removeClass("transparent");
-                $("#home-bg-open").addClass("transparent");
+                $("#home-bg").addClass("transparent");
+                $("#home-bg-open").removeClass("transparent");
                 $("#home-bg-solutions").addClass("transparent");
                 $("#section-quizz").fadeIn();
             }
