@@ -23,7 +23,7 @@
     },
     "ID2": {
       "question-EN": "What kind of developers do I have?",
-      "question-FR": "Quel type de développeurs ai-je ?",
+      "question-FR": "Quel type de développeurs·euses ai-je ?",
       "answers": [
         {
           "answer-EN": "None",
@@ -32,12 +32,12 @@
         },
         {
           "answer-EN": "I have developers",
-          "answer-FR": "J'ai des développeurs",
+          "answer-FR": "J'ai des développeurs·euses",
           "goto": "22"
         },
         {
           "answer-EN": "I have teams of developers and experts, able to build a product",
-          "answer-FR": "J'ai des équipes de développeurs et des experts capables de construire un produit",
+          "answer-FR": "J'ai des équipes de développeurs·euses et des experts capables de construire un produit",
           "goto": "23"
         }
       ]
@@ -284,19 +284,19 @@
       "id": "NODEVSNOMONEY",
       "name": "404: NO DEVELOPERS FOUND",
       "description-EN": "Current low-cost solutions require developers... You may need a bigger budget or to employ developers.",
-      "description-FR": "Les solutions peu onéreuses (open source) nécessitent des développeurs... Vous devez considérer un budget plus important pour les coûts de licence, ou bien employer des développeurs."
+      "description-FR": "Les solutions peu onéreuses (open source) nécessitent des développeurs·euses... Vous devez considérer un budget plus important pour les coûts de licence, ou bien employer des développeurs·euses."
     },
     {
       "id": "DIY",
       "name": "404: NO SOLUTION FOUND",
       "description-EN": "You must consider building your own API Management solution with your experts developers, to get a highly customized solution adapted to your constraints.",
-      "description-FR": "Armé de développeurs experts, vous devez considérer de construire votre propre solution d'API Management, adaptée à vos besoins, pour répondre à vos enjeux forts de personnalisation."
+      "description-FR": "Armé de développeurs·euses experts, vous devez considérer de construire votre propre solution d'API Management, adaptée à vos besoins, pour répondre à vos enjeux forts de personnalisation."
     },
     {
       "id": "RFP",
       "name": "404: NO PARTNERSHIP FOUND",
       "description-EN": "Send an RFP to vendors (Amazon API Gateway, Apigee, Axway, Broadcom, IBM, Microsoft, Mulesoft, Software AG, TIBCO Cloud™ Mashery® API Management.) or start thinking about employing developers to implement other solutions (3scale, Gravitee, Kong, Tyk or WSO2).",
-      "description-FR": "Vous pouvez consulter via une RFP les éditeurs (Amazon API Gateway, Apigee, Axway, Broadcom, IBM, Microsoft, Mulesoft, Software AG, TIBCO Cloud™ Mashery® API Management.) ou bien employer des développeurs pour implémenter d'autres solutions (3scale, Gravitee, Kong, Tyk ou WSO2)."
+      "description-FR": "Vous pouvez consulter via une RFP les éditeurs (Amazon API Gateway, Apigee, Axway, Broadcom, IBM, Microsoft, Mulesoft, Software AG, TIBCO Cloud™ Mashery® API Management.) ou bien employer des développeurs·euses pour implémenter d'autres solutions (3scale, Gravitee, Kong, Tyk ou WSO2)."
     }
   ]
 }
