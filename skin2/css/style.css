@@ -532,6 +532,11 @@ section {
     filter: brightness(0) invert(1);
 }
 
+.bloc-apim:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 #section-quizz h1 {
     font-size: 24px;
     letter-spacing: 0.1em;
@@ -544,6 +549,15 @@ section {
     letter-spacing: 0.05em;
     font-weight: 500;
     line-height: 28px;
+}
+
+#section-quizz .title {
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    z-index: 1;
+    line-height: 85px;
+    margin-top: -60px;
 }
 
 #section-quizz .form-check input, #section-quizz .form-check label {
@@ -582,6 +596,7 @@ section {
     color: #fff;
     line-height: 85px;
 }
+
 #section-intro-solutions p {
     font-weight: 500;
     color: #fff;
@@ -794,7 +809,14 @@ section {
     #section-intro-solutions p {
         padding: 0;
     }
-
+    #section-quizz .title {
+        font-size: 30px;
+        font-weight: 900;
+        color: #fff;
+        z-index: 1;
+        line-height: 44px;
+        margin-top: -30px;
+    }
     #section-solutions {
         background-color: #FFF;
     }

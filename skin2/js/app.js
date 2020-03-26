@@ -503,7 +503,9 @@ $(document).ready(function() {
         displayQuizzSolutions: function(apims) {
             this.apims = apims;
             var self = this;
-            var htmlapims = '<div class="row">';
+            // var htmlapims = '<div class="row"><div class="title">' + this._getCMSValue('home', 'section-quizz-title') + '</div></div>';
+            var htmlapims = '<div class="row"><h2 class="title">' + this._getCMSValue('home', 'section-quizz-title') + '</h2></div>';
+            htmlapims += '<div class="row">';
             for(var i = 0; i < apims.length; i++) {
                 var apim = apims[i];
                 for(var j = 0; j < self.conf.vendorSolutions.length; j++) {
