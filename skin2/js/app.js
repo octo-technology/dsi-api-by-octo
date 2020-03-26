@@ -46,7 +46,6 @@ $(document).ready(function() {
             var windowHeight = $(window).height();
             $('#home-bg-container').css('height', ''+ windowHeight +'px');
             $('#nav-overlay').css('height', ''+ windowHeight +'px');
-            $('#section-intro').css('height', ''+ windowHeight +'px');
             if($(window).width()>=992) {
                 windowHeight -=200;
             } else if($(window).width()>=768) {
@@ -54,6 +53,7 @@ $(document).ready(function() {
             } else {
                 windowHeight -=150;
             }
+            $('#section-intro').css('height', ''+ windowHeight +'px');
             $('#section-quizz').css('height', ''+ windowHeight +'px');
             $('#section-intro-solutions').css('height', ''+ windowHeight +'px');
         },
