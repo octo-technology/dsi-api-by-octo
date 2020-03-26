@@ -447,6 +447,10 @@ header:last-of-type .bg-light {
     box-shadow: 0 0 3px rgba(0,0,0,.1);
 }
 
+#logo-octo:hover {
+    cursor: pointer;
+}
+
 main {
     padding-top: 50px;
     background-color: #FFF;
