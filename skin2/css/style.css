@@ -610,7 +610,7 @@ section {
 }
 
 #section-solutions .row {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 #section-solutions .bloc {
@@ -665,6 +665,10 @@ section {
     font-size: 18px;
     line-height: 1.5em;
     color: #0e2356;
+}
+
+#section-solutions p {
+    margin-bottom: 40px;
 }
 
 #section-solutions .bloc-edito ul, #section-solutions .bloc-edito li {
